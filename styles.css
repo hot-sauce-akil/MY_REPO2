@@ -1,0 +1,62 @@
+ol > li
+{
+	color:red;
+}
+
+input[type=text]
+{
+	background-color: red;
+}
+input[type=password]
+{
+	background-color : yellow;
+}
+button
+{
+	width: 200px;
+	height: 50px;
+	background-color: green;
+	font-weight: bold;
+}
+button:hover
+{
+	background-color: orange;
+}
+
+a::before
+{
+	content: "\21d2 Click Here:";
+	font-weight: bold;
+}
+
+p::selection
+{
+	background-color: yellow;
+	color: red;
+}
+ @media print {
+	 .screen-only{
+		 display: none;
+	 }
+}
+@media (min-width:500px) {
+	h1::before{
+		content: "WELCOME TO MY WEBPAGE!!"
+	}
+}
+@media (max-width:500px) {
+	h1::before{
+		content: "WELCOME!!"
+	}
+}
+.container{
+	display: flex;
+	flex-wrap: wrap;
+}
+.container > div{
+	background-color: springgreen;
+	margin: 20px;
+	padding: 20px;
+	font-size: 20px;
+	width: 200px;
+}
